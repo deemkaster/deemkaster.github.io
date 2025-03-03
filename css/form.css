@@ -1,0 +1,162 @@
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+.window_fon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    display: none;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 10000;
+}
+.window_box {
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 100000;
+    text-align: center;
+    display: none;
+}
+.window_box:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 50%;
+    width: 0;
+}
+#WinTimerBox .window-cont {
+    margin-top: 0px;
+    background: none;
+    box-shadow: none;
+    max-width: 424px;
+    width: 100%;
+}
+.window-cont {
+    background: #fff;
+    box-shadow: 0 0 13px #000000;
+    display: none;
+    margin: 50px 0;
+    position: relative;
+    padding: 0 0 20px;
+}
+.cont-spec-order {
+    text-align: center;
+}
+.spec-order-img {
+    max-width: 300px;
+    width: 100%;
+	margin:0 auto;
+}
+@media only screen and (max-width: 768px) {
+.spec-order-img {
+    max-width: 180px;
+}
+.close-x {
+	top:0 !important;
+}
+}
+}
+#WinTimerBox .close-x {
+    top: 10px;
+}
+.close-x {
+    position: absolute;
+    right: 0px;
+    /*top: -32px;*/
+	top:10px;
+    cursor: pointer;
+    background: #fff;
+    padding: 7px;
+    border-radius: 50%;
+}
+.dop-form-contact {
+    background: #fff;
+    box-shadow: 0 0 13px #000000;
+    padding-bottom: 20px;
+}
+.cont-tab-col-cont {
+    width: 90%;
+    display: inline-block;
+}
+#dataTimer h2 {
+    margin: 20px 0 10px;
+    line-height: 1.1;
+    font-size: 26px;
+    font-weight: 700;
+	position: relative;
+    color: #333333;
+}
+
+input.form-number-one, input.form-number-one, select.form-number-one, .div-number-one {
+    height: 50px;
+    border: solid 1px #CFCFCF;
+    margin: 5px 0;
+}
+input.form-number-one, select.form-number-two, select.form-number-one, .div-number-one {
+    font-size: 15px;
+    width: 100%;
+    padding: 0 15px;
+    font-family: 'Open Sans';
+}
+.window_box button.button-callback {
+    width: 100%;
+}
+button.button-callback {
+    background: #ff9c03cf;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+#dataTimer p {
+    font-size: 14px;
+    color: #707070;
+    margin: 0 0 5px;
+}
+
+
+.spec-order-img img {
+    display: inherit;
+    width: 100%;
+}
+
+.discount {
+    margin-bottom: 10px;
+    background: #ff9c03cf;
+    display: inline-table;
+    position: relative;
+    font-size: 21px;
+    color: #000;
+}
+
+.discount:before {
+    content: '';
+    background: url(/form/img/discoun.png) no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: -31px;
+    background-size: contain;
+}
+
+div#phoneWinTimerError {
+    color: red;
+}
